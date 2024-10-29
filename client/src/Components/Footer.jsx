@@ -46,9 +46,9 @@ const Footer = () => {
                         <h1 className='uppercase  dark:text-heading2 font-normal mb-8'>GET IN TOUCH</h1>
                         <div className='space-y-3 dark:text-Description2'>
                             <p className='flex items-center gap-3'><SlLocationPin className=' dark:text-primary2 text-primary text-4xl' />374 William S Canning Blvd, Fall River MA 2721, USA</p>
-                            <p className='flex items-center gap-3'><TbPhoneCall className=' dark:text-primary2 text-primary text-2xl' />(+880)1893345368</p>
-                            <p className='flex items-center gap-3'><MdOutlineMarkEmailRead className='text-primary  dark:text-primary2  text-2xl' />support@webmate.app</p>
-                            <p className='flex items-center gap-3'><BsClockHistory className='text-primary dark:text-primary2  text-2xl' />10:00 - 17:00</p>
+                            <p className='flex items-center gap-3'><TbPhoneCall className=' dark:text-primary2 text-primary text-2xl' />+91999999999</p>
+                            <p className='flex items-center gap-3'><MdOutlineMarkEmailRead className='text-primary  dark:text-primary2  text-2xl' />dreamMate@support.com</p>
+                            <p className='flex items-center gap-3'><BsClockHistory className='text-primary dark:text-primary2  text-2xl' />10:00 - 18:00</p>
                         </div>
                     </div>
                     

@@ -49,7 +49,7 @@ const Banner = () => {
                                     <img className='size-[55px] -ml-4 rounded-full' src=" https://templates.hibotheme.com/wazo/default/assets/img/team/author-4.jpg" alt="" />
                                 </div>
                                 <div>
-                                    <p className='text-Description dark:text-Description2 font-secondary'>Meet other Users who joined WebMate recently</p>
+                                    <p className='text-Description dark:text-Description2 font-secondary'>Meet other Users who joined dreamMate recently</p>
                                 </div>
                             </div>
                         </div>
