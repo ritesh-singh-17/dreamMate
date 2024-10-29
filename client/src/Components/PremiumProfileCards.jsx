@@ -26,8 +26,8 @@ const PremiumProfileCards = () => {
     const loadData = async () => {
         const { data } = await axiosPublic.get(`/biodatas/premium`);
         return data.biodatas;
-    };
-    console.log(data)
+    };s
+    // console.log(data)
     const [selectedOption, setSelectedOption] = useState({ value: 'asc', label: ' Sort By Age ' });
 
     useEffect(() => {

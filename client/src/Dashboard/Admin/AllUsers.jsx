@@ -64,7 +64,7 @@ const AllUsers = () => {
                 try {
                     setLoading(true);
                     const res = await axiosSecure.patch(`/users/premium`, { id: user._id, email: user.email });
-                    console.log(res.data)
+                    // console.log(res.data)
                     if (res.data.message === "User and Biodata updated successfully.") {
                         refetch();
                         toast(`💲${user.displayName} is a Premium User now`);

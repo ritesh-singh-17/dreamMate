@@ -17,7 +17,7 @@ const Login = () => {
         window.scrollTo(0, 0);
     }, []);
     // console.log(window.location)
-    console.log({ user });
+    // console.log({ user });
     const location = useLocation()
     // console.log(location.state)
     const navigate = useNavigate()
@@ -54,10 +54,10 @@ const Login = () => {
                 setLoading(false)
                 setReload(true)
                 setUserInfo({ displayName: result.user?.displayName, photoURL: result.user?.photoURL, email: result.user?.email, loginWith: "google" });
-                console.log(userInfo)
+                // console.log(userInfo)
                 axiosPublic.get(`/users-new?email=${result.user?.email}`)
                     .then(res => {
-                        console.log(res.data);
+                        // console.log(res.data);
                         if (!res.data.insertedId) {
                             // console.log(res.data.insertedId);
                             navigate('/')
@@ -79,10 +79,10 @@ const Login = () => {
                 setLoading(false)
                 setReload(true)
                 setUserInfo({ displayName: result.user?.displayName, photoURL: result.user?.photoURL, email: result.user?.email, loginWith: "github" });
-                console.log(userInfo)
+                // console.log(userInfo)
                 axiosPublic.get(`/users-new?email=${result.user?.email}`)
                     .then(res => {
-                        console.log(res.data);
+                        // console.log(res.data);
                         if (!res.data.insertedId) {
                             // console.log(res.data.insertedId);
                             navigate('/')

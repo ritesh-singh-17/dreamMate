@@ -35,7 +35,7 @@ const ViewDetails = () => {
 
 
     const { user } = useContext(AuthContext);
-    console.log(user);
+    // console.log(user);
     const { id } = useParams();
     const [imgError, setImgError] = useState(false);
 
@@ -57,7 +57,7 @@ const ViewDetails = () => {
         queryFn: fetchUserDataByEmail,
         enabled: !!user.email,
     });
-    console.log(userInfo);
+    // console.log(userInfo);
     const fetchRelatedBiodata = async ({ queryKey }) => {
         const [_key, gender, excludeId] = queryKey;
         const response = await axiosSecure.get(`/related-biodatas?limit=6&gender=${gender}&excludeid=${excludeId}`);
@@ -89,7 +89,7 @@ const ViewDetails = () => {
 
     const gender = data?.bioData_type || '';
     const excludeId = data?.bioData_id || '';
-    console.log(excludeId)
+    // console.log(excludeId)
     const { data: relatedProfiles, isLoading: isLoadingRelated, error: relatedError } = useQuery({
         queryKey: ['relatedBiodatas', gender, excludeId],
         queryFn: fetchRelatedBiodata,
@@ -158,7 +158,7 @@ const ViewDetails = () => {
         ],
     };
 
-    console.log(isLoadingUser);
+    // console.log(isLoadingUser);
     const handleAddToFavorites = (bioDataId) => {
         console.log("clicked")
         addToFavorites(bioDataId);

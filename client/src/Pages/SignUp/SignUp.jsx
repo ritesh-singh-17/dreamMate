@@ -162,11 +162,11 @@ const SignUp = () => {
             //         }
             //     })
             setUserInfo({displayName: name, photoURL: url, email: email, password: confirmPassword });
-            console.log(userInfo)
-            console.log(email)
+            // console.log(userInfo)
+            // console.log(email)
             axiosPublic.get(`/users-new?email=${email}`)
                 .then(res => {
-                    console.log(res.data);
+                    // console.log(res.data);
                     if (!res.data.insertedId) {
                         // console.log(res.data.insertedId);
                         toast.error(res.data.message)

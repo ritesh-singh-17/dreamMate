@@ -69,7 +69,7 @@ const CheckoutForm = () => {
             setLoading(false);
         }
     };
-    console.log(biodataId)
+    // console.log(biodataId)
     return (
         <div className="lg:pt-16 lg:pl-12">
             <form onSubmit={handleSubmit} className="checkout-form p-6 bg-white dark:bg-[#234647] shadow-lg rounded-lg">

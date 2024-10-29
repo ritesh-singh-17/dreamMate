@@ -257,7 +257,7 @@ const Biodatas = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
                     {biodatas.map((biodata, index) => {
                         const isLastElement = biodatas.length === index + 1;
-                        console.log(biodata)
+                        {/* console.log(biodata) */}
                         return (
                             <div
                                 key={biodata.bioData_id}

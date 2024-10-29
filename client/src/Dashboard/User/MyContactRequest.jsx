@@ -54,7 +54,7 @@ const MyContactRequest = () => {
     if (isError) {
         return <div>Error: {error.message}</div>;
     }
-console.log(contacts)
+// console.log(contacts)
     return (
         <div className="lg:pl-12 lg:pt-16">
             <div className="flex flex-col gap-2 md:flex-row justify-between md:px-6 lg:px-16 mb-8">

@@ -33,7 +33,7 @@ const UserHome = () => {
         const response = await axiosSecure.get(`/related-biodatas?limit=6&gender=${gender}&excludeid=${excludeId}`);
         return response.data;
     };
-    console.log(biodata)
+    // console.log(biodata)
     useEffect(() => {
         if (biodata) {
             if (biodata.bioData_type === "Male") {

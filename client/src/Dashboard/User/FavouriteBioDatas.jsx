@@ -36,7 +36,7 @@ const FavouriteBioDatas = () => {
                     bioDataId
                 }
             });
-            console.log(response.data)
+            // console.log(response.data)
             if (response.data.modifiedCount === 1) {
                 toast(" ✅ Successfully removed from Favorites")
                 refetch();

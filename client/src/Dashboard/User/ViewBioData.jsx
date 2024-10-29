@@ -45,7 +45,7 @@ const ViewBioData = () => {
 
     const gender = data?.bioData_type || '';
     const excludeId = data?.bioData_id || '';
-    console.log(excludeId)
+    // console.log(excludeId)
     const { data: relatedProfiles, isLoading: isLoadingRelated, error: relatedError } = useQuery({
         queryKey: ['relatedBiodatas', gender, excludeId],
         queryFn: fetchRelatedBiodata,
@@ -56,7 +56,7 @@ const ViewBioData = () => {
         <SkeletonLoaderForViewDetails></SkeletonLoaderForViewDetails>
     );
     if (error) return <div className='h-[40vh] relative'><p className='absolute top-1/2 left-[20%]  md:left-[35%] lg:top-[40%] lg:left-[40%]'>Error Loading Biodata Details</p></div>;
-    console.log(data)
+    // console.log(data)
     
     const handleRequestPremium = async (user) => {
         Swal.fire({
@@ -72,7 +72,7 @@ const ViewBioData = () => {
             if (result.isConfirmed) {
                 try {
                     const res = await axiosSecure.post('/premium-request', { email: user?.email });
-                    console.log(res.data)
+                    // console.log(res.data)
                     
                     if (res.data.success) {
                         toast.success("Premium request sent successfully");

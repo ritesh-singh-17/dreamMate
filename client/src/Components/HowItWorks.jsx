@@ -9,7 +9,7 @@ import { TbHeartHandshake } from 'react-icons/tb';
 
 const HowItWorks = () => {
     const { theme } = useTheme();
-    console.log(theme)
+    // console.log(theme)
     return (
         <div className='pt-24'>
             <div>

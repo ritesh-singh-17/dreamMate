@@ -17,7 +17,7 @@ const useAxiosSecure = () => {
             (config) => {
                 const token = localStorage.getItem('access-token');
                 if (token) {
-                    console.log('Attaching token to request:', token); // Debug log
+                    // console.log('Attaching token to request:', token); // Debug log
                     config.headers.Authorization = `Bearer ${token}`;
                 }
                 return config;

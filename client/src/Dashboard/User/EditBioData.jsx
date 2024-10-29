@@ -111,7 +111,7 @@ const EditBioData = () => {
 
         axiosPublic.put(`/update/biodata/${email}`, formData)
             .then(res => {
-                console.log(res.data);
+                // console.log(res.data);
                 Swal.fire({
                     title: 'Updated Successfully!',
                     text: 'Your job data has been updated successfully',

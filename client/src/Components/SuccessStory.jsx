@@ -36,7 +36,7 @@ const SuccessStory = () => {
         queryKey: ['successStories'],
         queryFn: fetchSuccessStories,
     });
-console.log({data, isPending, error});
+// console.log({data, isPending, error});
     const settings = {
         dots: true,
         infinite: true,

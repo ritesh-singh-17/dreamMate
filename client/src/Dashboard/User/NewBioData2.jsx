@@ -19,7 +19,7 @@ const NewBioData2 = () => {
         setLoading(true);
         axiosPublic.get('/last-biodata-id')
             .then(res => {
-                console.log(res.data.length)
+                // console.log(res.data.length)
                 const lastBioDataId = res.data.length === 0 ? 0 : res.data[0].bioData_id;
                 const bioData_id = lastBioDataId + 1;
                 const profile_image = userInfo?.photoURL;
@@ -48,7 +48,7 @@ const NewBioData2 = () => {
                     mobile_number: phone,
                     about: desc
                 };
-                console.log(newBioData)
+                // console.log(newBioData)
                 if (userInfo.loginWith === "google") {
                     axiosPublic.post('/users', userInfo)
                         .then(res => {

@@ -47,7 +47,7 @@ const AuthContextProvider = ({ children }) => {
                 axiosPublic.post('/jwt', userInfo)
                     .then(res => {
                         if (res.data.token) {
-                            console.log('Token received:', res.data.token); // Debug log
+                            // console.log('Token received:', res.data.token); // Debug log
                             localStorage.setItem('access-token', res.data.token);
                             setLoading(false);
                         }
