@@ -119,12 +119,11 @@ const Contact = () => {
                             <div>
                                 <h3 className='font-semibold text-center lg:text-left'>Alternative contact of us</h3>
                                 <div className='mt-2 space-y-2 text-center lg:text-left lg:pb-0 pb-6'>
-                                    <p>info@mkmunna.com</p>
-                                    <p>+2535445(546)6</p>
-                                    <p>Lewa House Pimibi Ltd.</p>
-                                    <p>Po. Box 760</p>
-                                    <p>Isiolo</p>
-                                    <p>60300</p>
+                                    <p>info@ritesh.com</p>
+                                    <p>+919876543210</p>
+                                    <p>374 William S Canning Blvd,</p>
+                                    <p>Fall River MA 2721,</p>
+                                    <p>USA</p>
                                 </div>
                             </div>
                         </div>

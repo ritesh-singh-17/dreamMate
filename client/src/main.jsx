@@ -65,12 +65,12 @@ const router = createBrowserRouter([
       },
       {
         path: '/details/:id',
-        element: < PrivateRoute ><ViewDetails /></PrivateRoute>,
+        element: <PrivateRoute ><ViewDetails /></PrivateRoute>,
       },
       
       {
         path: '/contact',
-        element: < PrivateRoute ><Contact /></PrivateRoute>,
+        element: <><Contact /></>,
       },
       {
         path: '/about-us',
